@@ -6,7 +6,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="z-20 border-t-2 border-l-transparent border-r-transparent border-t-primary-900 bg-primary-950 text-primary-50">
+    <footer className="z-20 border-t-2 border-l-transparent border-r-transparent border-t-primary-900 bg-primary-950/30 text-primary-50">
       <div className="container mx-auto flex place-items-end justify-between p-6">
         <p>© 2024 Charles Cruz</p>
         <div className="flex">
