@@ -5,7 +5,7 @@ import Logo from "./Navbar/Logo";
 import MobileMenuButton from "./Navbar/MobileMenuButton";
 import MobileMenuOverlay from "./Navbar/MobileMenuOverlay";
 import NavbarLink from "./Navbar/NavbarLink";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const links = [
   {
@@ -25,7 +25,9 @@ const Navbar = () => {
     "mx-auto fixed left-0 right-0 top-0 z-40 border-primary-900 bg-primary-950" +
     (navbarOpen ? "" : " border-b-2");
 
-  navbarOpen ? disableBodyScroll(document) : enableBodyScroll(document);
+  useEffect(() => {
+    navbarOpen ? disableBodyScroll(document) : enableBodyScroll(document);
+  });
 
   return (
     <React.Fragment>
